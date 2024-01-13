@@ -13,6 +13,7 @@ import { useFormState } from 'react-dom';
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
 
+  // @ts-ignore
   const [state, dispatch] = useFormState(createInvoice, initialState);
 
   console.log(state);
